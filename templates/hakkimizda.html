@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    <title>Hakkımızda - ITU SUNY Club</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/suny_background.jpg') }}" alt="ITU SUNY Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Ana Sayfa</a></li>
+                <li><a href="{{ url_for('etkinliklerimiz') }}">Etkinliklerimiz</a></li>
+                <li><a href="{{ url_for('about') }}">Hakkımızda</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Hakkımızda</h2>
+            <p>İTÜ SUNY Kulübü, 2024 yılında İTÜ’nün küresel vizyonunu genişletmek ve öğrencilerine uluslararası bir ağ sunmak amacıyla kurulmuştur. Kulüp, üyelerine yalnızca akademik gelişim değil, aynı zamanda güçlü bir sosyal ve profesyonel network imkanı da sağlamayı hedeflemektedir. Globalleşen dünyada lider olma yolunda ilerlemek isteyen öğrenciler için tasarlanan İTÜ SUNY Kulübü, 2024-2025 döneminde çok sayıda etkinlik ve zirve düzenlemeyi planlıyor. Bu etkinlikler, öğrencilerin hem farklı sektörlerden uzmanlarla tanışmalarını hem de kariyer yolculuklarında önemli bir adım atmalarını sağlayacak. Sınırları aşan bir topluluk olarak, İTÜ SUNY Kulübü tüm üyelerini yenilikçi düşünmeye, küresel fırsatları değerlendirmeye ve geleceğin liderleri olmaya davet ediyor.</p>
+        </section>
+
+        <section id="team">
+            <h2><span class="header">YONETIM KURULU UYELERIMIZ</span></h2>
+
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/suat_bora.jpg') }}" alt="Yönetim Kurulu Baskani" class="circle-img">
+                <h3>Suat Bora Atakan</h3>
+                <p><span class="title">Yönetim Kurulu Başkanı</span></p>
+                <p>atakan22@itu.edu.tr</p>
+                <p>+90 535 399 70 03</p>
+            </div>
+
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/mina_saglam.jpg') }}" alt="Genel Sekreter" class="circle-img">
+                <h3>Mina Saglam</h3>
+                <p><span class="title">Genel Sekreter</span></p>
+                <p>saglammi22@itu.edu.tr</p>
+                <p>+90 505 421 21 62</p>
+            </div>
+
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/alper_m.jpg') }}" alt="Finans" class="circle-img">
+                <h3>Mehmet Alper Misirlioglu</h3>
+                <p><span class="title">Finansal İşler Sorumlusu</span></p>
+                <p>misirlioglu22@itu.edu.tr</p>
+                <p>+90 551 131 97 13</p>
+            </div>
+
+            <h3>Zirve Koordinatörleri</h3>
+            <div class="team-grid">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/menekse_ezgi.jpg') }}" alt="Koordinatör 1" class="circle-img">
+                    <h3>Menekse Ezgi Akyol</h3>
+                    <p><span class="title">Zirve Koordinatörü</span></p>
+                    <p>akyolme23@itu.edu.tr</p>
+                    <p>+90 545 475 34 62</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/ebrar_akif.jpg') }}" alt="Koordinatör 2" class="circle-img">
+                    <h3>Ebrar Akif Erol</h3>
+                    <p><span class="title">Zirve Koordinatörü</span></p>
+                    <p>erole21@itu.edu.tr</p>
+                    <p>+90 507 460 01 14</p>
+                </div>
+            </div>
+
+            <h3>Fuaye Alanı Sorumluları</h3>
+            <div class="team-grid">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/mert_ali.jpg') }}" alt="Sorumlu 1" class="circle-img">
+                    <h3>Mert Ali Ercivan</h3>
+                    <p><span class="title">Fuaiye Alanı Sorumlusu</span></p>
+                    <p>ercivan21@itu.edu.tr</p>
+                    <p>+90 544 873 80 07</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/furkan_b.jpg') }}" alt="Sorumlu 2" class="circle-img">
+                    <h3>Furkan Bayram Yalcin</h3>
+                    <p><span class="title">Fuaiye Alanı Sorumlusu</span></p>
+                    <p>yalcinf20@itu.edu.tr</p>
+                    <p>+90 538 711 89 84</p>
+                </div>
+            </div>
+
+            <h3>Dış İlişkiler Sorumluları</h3>
+            <div class="team-grid">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/sueda_lal.jpg') }}" alt="Dış İlişki 1" class="circle-img">
+                    <h3>Sueda Lal Yuksel</h3>
+                    <p><span class="title">Dış İlişkiler Sorumlusu</span></p>
+                    <p>yuksels22@itu.edu.tr</p>
+                    <p>+90 532 213 12 35</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/melisa_b.jpg') }}" alt="Dış İlişki 2" class="circle-img">
+                    <h3>Melisa Buyukkellecioglu</h3>
+                    <p><span class="title">Dış İlişkiler Sorumlusu</span></p>
+                    <p>buyukkellecioglu24@itu.edu.tr</p>
+                    <p>+90 532 069 38 00</p>
+                </div>
+            </div>
+
+            <h3>Sosyal Medya Sorumluları</h3>
+            <div class="team-grid">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/doga_evren.jpg') }}" alt="Sosyal Medya 1" class="circle-img">
+                    <h3>Doga Evren</h3>
+                    <p><span class="title">Sosyal Medya Sorumlusu</span></p>
+                    <p>evren22@itu.edu.tr</p>
+                    <p>+90 531 304 58 98</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/aykut_enguraa.jpg') }}" alt="Sosyal Medya 2" class="circle-img">
+                    <h3>Ceyda Bas</h3>
+                    <p><span class="title">Sosyal Medya Sorumlusu</span></p>
+                    <p>basc23@itu.edu.tr</p>
+                    <p>+90 546 930 80 75</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/doga_deniz.jpg') }}" alt="Sosyal Medya 3" class="circle-img">
+                    <h3>Doga Deniz Duzmekik</h3>
+                    <p><span class="title">Sosyal Medya Sorumlusu</span></p>
+                    <p>kerem.sahin@example.com</p>
+                    <p>+90 531 692 76 54</p>
+                </div>
+            </div>
+
+            <h3>Eğitim Kariyeri Sorumluları</h3>
+            <div class="team-grid">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/mustafa_s.jpg') }}" alt="Eğitim 1" class="circle-img">
+                    <h3>Mustafa Sanli</h3>
+                    <p><span class="title">Eğitim Kariyeri Sorumlusu</span></p>
+                    <p>sanli23@itu.edu.tr</p>
+                    <p>+90 553 743 30 01</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/erdem_k.jpg') }}" alt="Eğitim 2" class="circle-img">
+                    <h3>Erdem Kucukarslan</h3>
+                    <p><span class="title">Eğitim Kariyeri Sorumlusu</span></p>
+                    <p>kucukarslan23@itu.edu.tr</p>
+                    <p>+90 539 463 25 46</p>
+                </div>
+            </div>
+
+            <h3>Sosyal Etkinlik Sorumluları</h3>
+            <div class="team-grid">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/mert_polat.jpg') }}" alt="Etkinlik 1" class="circle-img">
+                    <h3>Mert Polat</h3>
+                    <p><span class="title">Sosyal Etkinlik Sorumlusu</span></p>
+                    <p>polatm22@itu.edu.tr</p>
+                    <p>+90 531 457 67 40</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/islam_q.jpg') }}" alt="Etkinlik 2" class="circle-img">
+                    <h3>Islam Qasimov</h3>
+                    <p><span class="title">Sosyal Etkinlik Sorumlusu</span></p>
+                    <p>gasimov23@itu.edu.tr</p>
+                    <p>+90 537 617 36 86</p>
+                </div>
+            </div>
+
+            <h3>Denetim Kurulu</h3>
+            <div class="team-grid">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/dila_ozer.jpg') }}" alt="Denetim 1" class="circle-img">
+                    <h3>Dila Özer</h3>
+                    <p><span class="title">Denetim Kurulu Üyesi</span></p>
+                    <p>ozerd24@itu.edu.tr</p>
+                    <p>+90 553 876 43 60</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/alper_k.jpg') }}" alt="Denetim 2" class="circle-img">
+                    <h3>Alper Kaplan</h3>
+                    <p><span class="title">Denetim Kurulu Üyesi</span></p>
+                    <p>kaplana21@itu.edu.tr</p>
+                    <p>+90 532 677 86 71</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/mehmet_bugra.jpg') }}" alt="Denetim 3" class="circle-img">
+                    <h3>Mehmet Bugra Gülcemal</h3>
+                    <p><span class="title">Denetim Kurulu Üyesi</span></p>
+                    <p>gulcemal20@itu.edu.tr</p>
+                    <p>+90 534 962 33 04</p>
+                </div>
+            </div>
+
+            <h3>IT Sorumlusu</h3>
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/aykut_engur.jpg') }}" alt="IT Sorumlusu" class="circle-img" style="object-position: top;">
+                <h3>Aykut Engür</h3>
+                <p><span class="title">IT Sorumlusu</span></p>
+                <p>engur23@itu.edu.tr</p>
+                <p>+90 546 835 21 51</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-section">
+                <p class="social-text">Sosyal Medya Hesaplarımız</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/sunykulubu" target="_blank">
+                        <img src="{{ url_for('static', filename='images/insta_icon.jpg') }}" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/company/itu-suny-kulubü/about/" target="_blank">
+                        <img src="{{ url_for('static', filename='images/linkedin_icon.png') }}" alt="LinkedIn" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="logo-container">
+                    <img src="{{ url_for('static', filename='images/itu_suny_logo.jpg') }}" alt="ITU SUNY Logo" class="footer-logo">
+                    <img src="{{ url_for('static', filename='images/itu_logo.jpg') }}" alt="ITU Logo" class="itu-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
