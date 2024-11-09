@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    <title>Etkinliklerimiz - ITU SUNY Club</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/suny_background.jpg') }}" alt="ITU SUNY Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Ana Sayfa</a></li>
+                <li><a href="{{ url_for('etkinliklerimiz') }}">Etkinliklerimiz</a></li>
+                <li><a href="{{ url_for('about') }}">Hakkımızda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Etkinliklerimiz</h2>
+        
+        
+        <div class="events-container">
+            <!-- Past Events Column -->
+            <div class="events-column">
+                <h3>Geçmiş Etkinlikler</h3>
+                <div class="event">
+                    <h4>ITU SUNY KULÜBÜ TANIŞMA TOPLANTISI</h4>
+                    <img src="{{ url_for('static', filename='images/meeting1.jpg') }}" alt="ITU SUNY Tanışma Toplantısı" class="event-image">
+                    <p><strong>Tarih:</strong> 30 Ekim 2024</p>
+                    <p><strong>Yer:</strong> ITU Macka Kampüsü</p>
+                </div>
+            </div>
+
+            <!-- Next Events Column -->
+            <div class="events-column">
+                <h3>Gelecek Etkinlikler</h3>
+                <p>Gelecekteki etkinlikler burada listelenecektir.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+

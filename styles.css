@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+}
+
+.logo img {
+    height: 50px; /* Adjust size as needed */
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+section {
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px; /* Space around section */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text color */
+}
+
+p {
+    max-width: 800px; /* Limit paragraph width */
+    margin: 0 auto; /* Center the paragraph */
+    line-height: 1.6; /* Improve readability */
+    color: #555; /* Slightly lighter text color */
+}
+
+#team {
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px; /* Space around section */
+}
+
+.founder {
+    text-align: center; /* Center the founder's details */
+    margin-bottom: 40px; /* Space below founder */
+}
+
+.member {
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    text-align: center; /* Center text */
+    margin: 10px; /* Space around each member */
+}
+
+.circle-img {
+    width: 100px; /* Size of the image */
+    height: 100px; /* Size of the image */
+    border-radius: 50%; /* Circle shape */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-bottom: 10px; /* Space below image */
+}
+
+.team-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.circle-img {
+    width: 100px; /* Size of the displayed circle */
+    height: 100px; /* Size of the displayed circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    margin-bottom: 10px; /* Space below image */
+}
+
+
+.title {
+    color: #57b9ff; /* Set the title color */
+}
+
+.header{
+    color: #0811cf;
+}
+
+
+footer {
+    background-color: #f8f8f8; /* Light background for footer */
+    padding: 20px; /* Padding around the footer */
+    display: flex;
+    justify-content: center; /* Center everything in the footer */
+    align-items: center; /* Center items vertically */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center container */
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column; /* Stack text and icons vertically */
+    align-items: center; /* Center text and icons */
+}
+
+.right-section {
+    display: flex; /* Align logos side by side */
+    align-items: center; /* Center logos vertically */
+}
+
+.logo-container {
+    display: flex; /* Align logos side by side */
+    align-items: center; /* Center logos vertically */
+    justify-content: center; /* Center logos horizontally */
+}
+
+.social-text {
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    margin-bottom: 5px; /* Space between text and icons */
+    text-align: center; /* Center text */
+}
+
+.footer-logo {
+    width: 150px; /* Adjust size as needed */
+}
+
+.itu-logo {
+    width: 100px; /* Adjust size as needed */
+    margin-left: 10px; /* Space between logos */
+}
+
+.social-icons {
+    display: flex; /* Align icons horizontally */
+}
+
+.social-icon {
+    width: 30px; /* Size of social media icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 5px; /* Space between icons */
+}
+
+
+#vision-mission {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    margin: 20px; /* Margin around the section */
+    margin-top: 40px; /* Add top margin to push it down */
+}
+
+.column {
+    flex: 1; /* Allow columns to take equal space */
+    margin: 0 10px; /* Space between columns */
+    padding: 20px; /* Padding inside each column */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    border-radius: 5px; /* Optional: rounded corners */
+    background-color: #f8f8f8; /* Optional: background color */
+}
+
+
+
+
+
+
+#vision-mission h2 {
+    color: #0811cf; /* Set color for the headings only */
+}
+
+
+/* Events Container */
+.events-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+/* Column Styles */
+.events-column {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 500px; /* Limits height of the columns */
+    overflow-y: auto; /* Allows scroll if content exceeds max height */
+}
+
+/* Event Styling */
+.event {
+    margin-bottom: 15px; /* Reduced spacing between events */
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd; /* Light separator between events */
+}
+
+.event h4 {
+    font-size: 1.1em; /* Slightly smaller font for titles */
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.event-image {
+    width: 100%;
+    height: 150px; /* Limits image height */
+    object-fit: cover; /* Ensures image fills the space without distortion */
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.event p {
+    font-size: 0.9em; /* Reduced font size for date and place */
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 40px; /* Adjust size */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #image-slider img {
+        width: 100%; /* Full width on mobile */
+        height: auto;
+    }
+
+    .events-container {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    #vision-mission {
+        flex-direction: column;
+    }
+
+    .events-column, .column {
+        width: 100%; /* Full width for each section */
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background-color: #333;
+}
+
+nav ul li a.dark-mode {
+    color: #ffffff;
+}
+
+.event.dark-mode {
+    background-color: #333;
+    color: #ccc;
+}
+
+/* Ensure specific styling changes for dark mode */
+button#dark-mode-toggle {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
