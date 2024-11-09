@@ -293,30 +293,4 @@ footer {
     }
 }
 
-/* Dark Mode */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
 
-header.dark-mode {
-    background-color: #333;
-}
-
-nav ul li a.dark-mode {
-    color: #ffffff;
-}
-
-.event.dark-mode {
-    background-color: #333;
-    color: #ccc;
-}
-
-/* Ensure specific styling changes for dark mode */
-button#dark-mode-toggle {
-    background-color: #f0f0f0;
-    color: #333;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}

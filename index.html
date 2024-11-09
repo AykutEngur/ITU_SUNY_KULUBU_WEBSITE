@@ -60,8 +60,7 @@
                 <li><a href="{{ url_for('home') }}">Ana Sayfa</a></li>
                 <li><a href="{{ url_for('etkinliklerimiz') }}">Etkinliklerimiz</a></li>
                 <li><a href="{{ url_for('about') }}">Hakkımızda</a></li>
-                <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
-
+                
             </ul>
         </nav>
     </header>
@@ -112,12 +111,6 @@
         function nextImage() {
             currentIndex = (currentIndex + 1) % images.length;
             showImage(currentIndex);
-        }
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-            document.querySelectorAll("header, nav ul li a, .event").forEach(element => {
-                element.classList.toggle("dark-mode");
-            });
         }
         
     </script>
